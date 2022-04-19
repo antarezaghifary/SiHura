@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Si Hura Hura</string>
+    <string name="masukkan_email">Masukkan email</string>
+    <string name="masukkan_password">Masukkan password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>
