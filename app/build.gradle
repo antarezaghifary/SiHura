@@ -82,4 +82,8 @@ dependencies {
     implementation "android.arch.paging:runtime:1.0.1"
     implementation "androidx.paging:paging-runtime-ktx:2.1.2"
     implementation "androidx.paging:paging-rxjava2-ktx:2.1.2"
+
+    //slider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }

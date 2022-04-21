@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Register.RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:title="Register"
+        app:titleTextColor="#000000" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:hint="Masukkan Nama Lengkap"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dp"
+        tools:ignore="Autofill">
+
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/masukkan_email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="20dp"
+        tools:ignore="Autofill">
+
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/masukkan_password"
+        android:inputType="textPassword"
+        android:paddingBottom="20dp"
+        tools:ignore="Autofill" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ulang_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:hint="@string/masukkan_password"
+        android:inputType="textPassword"
+        android:paddingBottom="20dp"
+        tools:ignore="Autofill" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ulang_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="#00008b"
+        android:enabled="true"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/login_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:enabled="true"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="#00008b"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
