@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.Register.RegisterActivity">
+    tools:context=".ui.AddData.AddDataActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
-            app:title="Register"
+            app:title="Lengkapi data pribadimu"
             app:titleTextColor="#000000" />
 
 
@@ -168,24 +168,9 @@
             android:layout_marginRight="20dp"
             android:background="#00008b"
             android:enabled="true"
-            android:text="@string/register"
+            android:text="@string/daftar_sekarang"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/register_button"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_below="@+id/login_button"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="20dp"
-            android:background="#FFFFFF"
-            android:enabled="true"
-            android:text="@string/login"
-            android:textAllCaps="false"
-            android:textColor="#00008b"
             android:textSize="20sp" />
 
     </RelativeLayout>
