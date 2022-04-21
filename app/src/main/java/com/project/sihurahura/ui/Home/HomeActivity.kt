@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.oratakashi.viewbinding.core.binding.activity.viewBinding
 import com.project.sihurahura.databinding.ActivityHomeBinding
 import com.project.sihurahura.ui.AddData.AddDataActivity
+import com.project.sihurahura.ui.Beasiswa.BeasiswaActivity
 import com.smarteist.autoimageslider.SliderView
 
 class HomeActivity : AppCompatActivity() {
@@ -29,6 +30,11 @@ class HomeActivity : AppCompatActivity() {
 
             lengkapiData.setOnClickListener {
                 val intent = Intent(this@HomeActivity, AddDataActivity::class.java)
+                startActivity(intent)
+            }
+
+            RlBeasiswa.setOnClickListener {
+                val intent = Intent(this@HomeActivity, BeasiswaActivity::class.java)
                 startActivity(intent)
             }
 

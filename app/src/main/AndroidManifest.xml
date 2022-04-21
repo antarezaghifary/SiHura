@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SiHuraHura.NoActionBar">
         <activity
+            android:name=".ui.KelasKaryawan.KelasKaryawanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Biaya.BiayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Beasiswa.BeasiswaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Prodi.ProdiActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.AddData.AddDataActivity"
             android:exported="false" />
         <activity
