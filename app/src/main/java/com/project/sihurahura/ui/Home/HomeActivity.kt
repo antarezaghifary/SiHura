@@ -8,6 +8,8 @@ import com.oratakashi.viewbinding.core.binding.activity.viewBinding
 import com.project.sihurahura.databinding.ActivityHomeBinding
 import com.project.sihurahura.ui.AddData.AddDataActivity
 import com.project.sihurahura.ui.Beasiswa.BeasiswaActivity
+import com.project.sihurahura.ui.Biaya.BiayaActivity
+import com.project.sihurahura.ui.KelasKaryawan.KelasKaryawanActivity
 import com.project.sihurahura.ui.Prodi.ProdiActivity
 import com.smarteist.autoimageslider.SliderView
 
@@ -44,6 +46,15 @@ class HomeActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
+            RlBiaya.setOnClickListener {
+                val intent = Intent(this@HomeActivity, BiayaActivity::class.java)
+                startActivity(intent)
+            }
+
+            RlKekar.setOnClickListener {
+                val intent = Intent(this@HomeActivity, KelasKaryawanActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 

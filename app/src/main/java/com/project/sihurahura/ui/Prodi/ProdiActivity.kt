@@ -43,7 +43,6 @@ class ProdiActivity : AppCompatActivity() {
             })
             btnBackIsolasi.setOnClickListener {
                 finish()
-                super.onBackPressed()
             }
         }
 
