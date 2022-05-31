@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar_login"
             android:layout_marginTop="60dp"
-            android:hint="Masukkan nama"
+            android:hint="Masukkan username"
             android:textColorHint="#B3BDCB"
             app:boxBackgroundMode="outline"
             app:boxStrokeColor="#4890F0"
@@ -39,14 +39,13 @@
             tools:ignore="HardcodedText">
 
             <cz.ackee.ui.textfield.TextInputEditText
-                android:id="@+id/nama"
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/toolbar_login"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:drawablePadding="10dp"
-                android:inputType="textEmailAddress"
                 android:paddingTop="32dp"
                 android:paddingBottom="20dp"
                 tools:ignore="Autofill,SpeakableTextPresentCheck">
@@ -125,44 +124,12 @@
                 tools:ignore="Autofill,SpeakableTextPresentCheck" />
         </cz.ackee.ui.textfield.TextInputLayout>
 
-        <cz.ackee.ui.textfield.TextInputLayout
-            android:id="@+id/textInputLayout4"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textInputLayout3"
-            android:layout_marginTop="24dp"
-            android:hint="Masukkan ulang password"
-            android:textColorHint="#B3BDCB"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="#4890F0"
-            app:hintEnabled="true"
-            app:hintPaddingTop="12dp"
-            app:hintTextAppearance="@style/TextAppearance.Design.Hint"
-            app:hintTextColor="#4890F0"
-            app:prefixTextColor="@color/black"
-            tools:ignore="HardcodedText">
-
-
-            <cz.ackee.ui.textfield.TextInputEditText
-                android:id="@+id/ulang_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="11dp"
-                android:layout_marginRight="20dp"
-                android:drawablePadding="10dp"
-                android:inputType="textPassword"
-                android:paddingTop="32dp"
-                android:paddingBottom="20dp"
-                tools:ignore="Autofill,SpeakableTextPresentCheck" />
-        </cz.ackee.ui.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/login_button"
+            android:id="@+id/signup_button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_below="@+id/textInputLayout4"
+            android:layout_below="@+id/textInputLayout3"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
@@ -177,7 +144,7 @@
             android:id="@+id/register_button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_below="@+id/login_button"
+            android:layout_below="@+id/signup_button"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"

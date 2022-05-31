@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar_login"
         android:layout_marginTop="60dp"
-        android:hint="@string/masukkan_email"
+        android:hint="Masukkan Username"
         android:textColorHint="#B3BDCB"
         app:boxBackgroundMode="outline"
         app:boxStrokeColor="#4890F0"
@@ -34,7 +34,7 @@
         tools:ignore="HardcodedText">
 
         <cz.ackee.ui.textfield.TextInputEditText
-            android:id="@+id/email"
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar_login"

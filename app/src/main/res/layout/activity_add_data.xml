@@ -43,7 +43,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Beasiswa\nUntuk Mahasiswa"
+                    android:text="Lengkapi Data\n Pendaftaran"
                     android:textColor="@color/black"
                     android:textSize="32sp"
                     android:textStyle="bold" />
@@ -120,7 +120,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:hint="@string/masukkan_email"
+                android:hint="Masukkan Tanggal Lahir"
                 android:textColorHint="#B3BDCB"
                 app:boxBackgroundMode="outline"
                 app:boxStrokeColor="#4890F0"
@@ -132,7 +132,7 @@
                 tools:ignore="HardcodedText">
 
                 <cz.ackee.ui.textfield.TextInputEditText
-                    android:id="@+id/email"
+                    android:id="@+id/ttl"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -154,7 +154,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:hint="@string/masukkan_password"
+                android:hint="Pilih Jenis Kelamin"
                 android:textColorHint="#B3BDCB"
                 app:boxBackgroundMode="outline"
                 app:boxStrokeColor="#4890F0"
@@ -167,7 +167,7 @@
 
 
                 <cz.ackee.ui.textfield.TextInputEditText
-                    android:id="@+id/password"
+                    android:id="@+id/jenis_kel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -186,7 +186,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:hint="Masukkan ulang password"
+                android:hint="Masukkan Agama"
                 android:textColorHint="#B3BDCB"
                 app:boxBackgroundMode="outline"
                 app:boxStrokeColor="#4890F0"
@@ -199,7 +199,466 @@
 
 
                 <cz.ackee.ui.textfield.TextInputEditText
-                    android:id="@+id/ulang_password"
+                    android:id="@+id/agama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout5"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan No HP"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/no_hp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout6"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Alamat"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout7"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Asal Sekolah"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/asal_sekolah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout8"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Agama"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/jurusan_sekolah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout10"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan NISN"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/nisn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout11"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Pilih Prodi"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/prodi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout12"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Status Daftar"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/status_daftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout13"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Nama Ayah"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/nama_ayah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout14"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Agama"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/status_ortu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout15"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Pekerjaan"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/pekerjaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout16"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Penghasilan"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/penghasilan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout17"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan No HP Ortu"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/no_hp_ortu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout18"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Nilai Ijasah"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/nilai_ijasah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:paddingTop="32dp"
+                    android:paddingBottom="20dp"
+                    tools:ignore="Autofill,SpeakableTextPresentCheck" />
+            </cz.ackee.ui.textfield.TextInputLayout>
+
+
+            <cz.ackee.ui.textfield.TextInputLayout
+                android:id="@+id/textInputLayout19"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:hint="Masukkan Nilai Transkrip"
+                android:textColorHint="#B3BDCB"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#4890F0"
+                app:hintEnabled="true"
+                app:hintPaddingTop="12dp"
+                app:hintTextAppearance="@style/TextAppearance.Design.Hint"
+                app:hintTextColor="#4890F0"
+                app:prefixTextColor="@color/black"
+                tools:ignore="HardcodedText">
+
+
+                <cz.ackee.ui.textfield.TextInputEditText
+                    android:id="@+id/nilai_transkrip"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
@@ -213,7 +672,7 @@
             </cz.ackee.ui.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/login_button"
+                android:id="@+id/submit_button"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
