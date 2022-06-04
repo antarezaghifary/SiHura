@@ -28,7 +28,7 @@ class BiayaActivity : AppCompatActivity() {
                     scrollRange = barLayout?.totalScrollRange!!
                 }
                 if (scrollRange + verticalOffset == 0) {
-                    collapsingToolbar.title = "Panduan Isolasi Mandiri"
+                    collapsingToolbar.title = "Biaya Perkuliahan"
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
                     toolbarIsolasi.setNavigationIcon(R.drawable.ic_arrow_24dp)
                     isShow = true

@@ -1,7 +1,12 @@
 package com.project.sihurahura.ui.AddData
 
+import android.app.Activity
 import android.content.Intent
+import android.graphics.Bitmap
+import android.net.Uri
 import android.os.Bundle
+import android.util.Base64
+import android.util.Log
 import android.view.WindowManager
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -10,17 +15,26 @@ import com.oratakashi.viewbinding.core.binding.activity.viewBinding
 import com.project.sihurahura.R
 import com.project.sihurahura.data.model.addData.AddData
 import com.project.sihurahura.databinding.ActivityAddDataBinding
-import com.project.sihurahura.ui.Main.MainActivity
+import com.project.sihurahura.ui.Home.HomeActivity
+import com.project.sihurahura.util.Prefs
 import com.project.sihurahura.util.VmData
 import com.project.sihurahura.util.toast
+import java.io.ByteArrayOutputStream
 
 class AddDataActivity : AppCompatActivity() {
     private val binding: ActivityAddDataBinding by viewBinding()
-
     private val viewModel: AddDataViewModel by viewModels()
+    private var prefs: Prefs? = null
+    private var id: Int? = null
+    private val REQUEST_CODE = 100
+    private var bitmap: Bitmap? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        prefs = this.let { Prefs(it) }
+        id = prefs?.getValueInt("id")
+        Log.e("TAG", "id: $id")
 
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN
@@ -36,7 +50,7 @@ class AddDataActivity : AppCompatActivity() {
                     scrollRange = barLayout?.totalScrollRange!!
                 }
                 if (scrollRange + verticalOffset == 0) {
-                    collapsingToolbar.title = "Beasiswa"
+                    collapsingToolbar.title = "Lengkapi Data"
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
                     toolbarIsolasi.setNavigationIcon(R.drawable.ic_arrow_24dp)
                     isShow = true
@@ -80,6 +94,7 @@ class AddDataActivity : AppCompatActivity() {
                 if (validate) {
                     viewModel.postDataUSer(
                         AddData(
+                            id,
                             nama,
                             ttl,
                             jenis_kel,
@@ -97,15 +112,27 @@ class AddDataActivity : AppCompatActivity() {
                             penghasilan,
                             no_hp_ortu,
                             nilai_ijasah,
-                            nilai_transkrip
+                            nilai_transkrip,
+                            "poto.jpg"
                         )
                     )
                 } else {
                     toast("Lengkapi Data Dahulu . . .")
                 }
             }
+            btnPhoto.setOnClickListener {
+                openGalleryForImage()
+            }
         }
         setObservableAddData()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK && requestCode == REQUEST_CODE) {
+            val path: Uri? = data?.data
+            binding.image.setImageURI(data?.data) // handle chosen image
+        }
     }
 
     private fun setObservableAddData() {
@@ -113,6 +140,8 @@ class AddDataActivity : AppCompatActivity() {
             when (it) {
                 is VmData.Loading -> {
                     toast("Loading . . .")
+                    binding.submitButton.isEnabled = false
+                    binding.submitButton.setBackgroundColor(R.color.browser_actions_bg_grey)
                 }
 
                 is VmData.Success -> {
@@ -120,7 +149,7 @@ class AddDataActivity : AppCompatActivity() {
                         toast("Cek data kembali")
                     } else {
                         toast("${it.data.message}")
-                        intent = Intent(this, MainActivity::class.java)
+                        intent = Intent(this, HomeActivity::class.java)
                         startActivity(intent)
                         finish()
                     }
@@ -131,5 +160,18 @@ class AddDataActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun openGalleryForImage() {
+        val intent = Intent(Intent.ACTION_PICK)
+        intent.type = "image/*"
+        startActivityForResult(intent, REQUEST_CODE)
+    }
+
+    private fun convertToString(): String? {
+        val byteArrayOutputStream = ByteArrayOutputStream()
+        bitmap?.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream)
+        val imgByte: ByteArray = byteArrayOutputStream.toByteArray()
+        return Base64.encodeToString(imgByte, Base64.DEFAULT)
     }
 }

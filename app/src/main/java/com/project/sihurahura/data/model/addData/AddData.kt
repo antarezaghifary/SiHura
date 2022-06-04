@@ -3,6 +3,7 @@ package com.project.sihurahura.data.model.addData
 import com.google.gson.annotations.SerializedName
 
 data class AddData(
+    @SerializedName("id_user") val id: Int?,
     @SerializedName("nama") val nama: String?,
     @SerializedName("ttl") val ttl: String?,
     @SerializedName("jenis_kel") val jenis_kel: String?,
@@ -21,4 +22,5 @@ data class AddData(
     @SerializedName("no_hp_ortu") val no_hp_ortu: String?,
     @SerializedName("nilai_ijazah") val nilai_ijazah: String?,
     @SerializedName("nilai_transkip") val nilai_transkip: String?,
+    @SerializedName("foto") val foto: String?,
 )

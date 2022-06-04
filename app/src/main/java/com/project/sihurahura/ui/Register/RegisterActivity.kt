@@ -43,6 +43,10 @@ class RegisterActivity : AppCompatActivity() {
                     )
                 }
             }
+
+            loginButton.setOnClickListener {
+                finish()
+            }
         }
         setObservableSignUp()
     }

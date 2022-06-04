@@ -14,14 +14,28 @@
         app:title=" Log In"
         app:titleTextColor="#000000" />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_login"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="32dp"
+        android:lineHeight="32dp"
+        android:text="Selamat Datang \nMahasiswa Baru"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
 
     <cz.ackee.ui.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar_login"
-        android:layout_marginTop="60dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="40dp"
         android:hint="Masukkan Username"
         android:textColorHint="#B3BDCB"
         app:boxBackgroundMode="outline"

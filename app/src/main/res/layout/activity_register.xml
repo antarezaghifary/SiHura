@@ -141,7 +141,7 @@
             android:textSize="20sp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/register_button"
+            android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_below="@+id/signup_button"

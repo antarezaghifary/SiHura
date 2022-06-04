@@ -8,5 +8,8 @@ data class LoginResponse(
     val statusCode: Int? = null,
 
     @field:SerializedName("message")
-    val message: String? = null
+    val message: String? = null,
+
+    @field:SerializedName("id")
+    val id: Int? = null,
 )
