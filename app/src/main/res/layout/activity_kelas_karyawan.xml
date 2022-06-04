@@ -51,7 +51,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Lorem ipsum dolor"
+                    android:lineHeight="20dp"
+                    android:text="Universitas Teknologi Digital Indonesia (UTDI), dahulu STMIK AKAKOM merupakan sekolah tinggi komputer yang pertama dan utama di Yogyakarta, yang senantiasa ingin memberikan suasana yang penuh dengan Teknologi Informasi (TI) di semua bidang kehidupan masyarakat sekaligus menjadi kampus kebanggaan di bidang TI di Yogyakarta. UTDI memiliki kemampuan yang handal dalam meluluskan Sarjana Komputer di bidang TI yang berdaya saing tinggi di bidangnya."
                     android:textColor="@color/colorAccent"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -90,16 +91,16 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_kenali" />
+                    android:src="@drawable/classroom" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="6dp"
                     android:layout_marginTop="8dp"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet"
+                    android:text="Jenjang dan Program Studi"
                     android:textColor="@color/colorText"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -110,7 +111,10 @@
                     android:layout_marginHorizontal="6dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet"
+                    android:lineHeight="20dp"
+                    android:text="Program kelas karyawan UTDI menyelenggarakan pendidikan untuk jenjang S1 Sistem Informasi dan Teknik Informatika.\n\n
+Sistem Pendidikan\n
+Sistem pendidikan program S1 kelas karyawan mengikuti sistem paket dengan masa studi : 8 semester (4 tahun) dan beban studi (jumlah sks yang harus ditempuh) : 144 sks. Perencanaan maupun pelaksanaan kurikulum mengacu pada sistem Kurikulum Berbasis Kompetensi (KBK) dengan sistem paket."
                     android:textColor="@color/colorText" />
             </LinearLayout>
 

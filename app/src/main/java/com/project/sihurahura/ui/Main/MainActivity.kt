@@ -1,5 +1,6 @@
 package com.project.sihurahura.ui.Main
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.WindowManager
@@ -71,6 +72,7 @@ class MainActivity : AppCompatActivity() {
         BACK_PRESSED = System.currentTimeMillis()
     }
 
+    @SuppressLint("ResourceAsColor")
     private fun setObservableLogin() {
         viewModel.postLogin.observe(this) {
             when (it) {
@@ -84,6 +86,8 @@ class MainActivity : AppCompatActivity() {
                 is VmData.Success -> {
                     if (it.data.statusCode == 401) {
                         toast("${it.data.message}")
+                        binding.loginButton.isEnabled = true
+                        binding.loginButton.setBackgroundResource(R.color.blue)
                     } else {
                         toast("Berhasil Login . . .")
                         it.data.id.let { it1 ->
@@ -99,6 +103,8 @@ class MainActivity : AppCompatActivity() {
 
                 is VmData.Failure -> {
                     toast("${it.message}")
+                    binding.loginButton.isEnabled = true
+                    binding.loginButton.setBackgroundColor(R.color.blue)
                 }
             }
         }

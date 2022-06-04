@@ -31,7 +31,7 @@ class ProdiActivity : AppCompatActivity() {
                     scrollRange = barLayout?.totalScrollRange!!
                 }
                 if (scrollRange + verticalOffset == 0) {
-                    collapsingToolbar.title = "Lorem Ipsum Dolor"
+                    collapsingToolbar.title = "Program Studi"
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
                     toolbarInformasi.setNavigationIcon(R.drawable.ic_arrow_24dp)
                     isShow = true

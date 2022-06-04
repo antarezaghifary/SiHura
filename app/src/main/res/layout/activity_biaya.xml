@@ -52,9 +52,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Tahun ajaran 2022/2023"
+                    android:lineHeight="20dp"
                     android:textColor="@color/colorAccent"
                     android:textSize="12sp"
+                    android:text="Komponen biaya pendidikan meliputi biaya SPA (Sumbangan Pengembangan Akademik) dan biaya SPP (Sumbangan Pengembangan Pendidikan). Komponen biaya tersebut tidak termasuk biaya sertifikasi, wisuda, dan biaya administrasi lainnya dalam proses kegiatan kemahasiswaan nantinya."
                     android:textStyle="italic" />
             </LinearLayout>
 
@@ -99,11 +100,18 @@
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/biaya1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
-                    android:textAlignment="center"
+                    android:text="Biaya Pendidikan Untuk Mahasiswa Baru\n
+SPA dibayarkan satu kali selama menjadi mahasiswa dan dapat diangsur sebanyak lima kali dalam dua semester pertama (sekitar satu tahun).
+Pembayaran SPP semester 1 dilakukan saat pendaftaran ulang. SPP semester berikutnya dibayarkan sebelum pengisian Kartu Rencana Studi (KRS). Jadwal pembayaran SPP ditentukan oleh kalender akademik yang akan diperoleh mahasiswa saat kuliah perdana.\n\n
+Jenjang D3\n
+Rekayasa Perangkat Lunak Aplikasi SPA->13JT
+\n
+Jenjang S1\n
+Informatika SPA-> 18JT"
                     android:textColor="@color/colorText" />
             </LinearLayout>
 
@@ -127,10 +135,14 @@
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/biaya2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    android:text="Biaya Pendidikan Untuk Alih Jalur dan Pindahan\n
+Alih Jalur Luar -> 50% dari SPA
+Khusus Alih Jalur Dalam di potong
+Rp 3.000.000"
                     android:textAlignment="center"
                     android:textColor="@color/colorText" />
             </LinearLayout>
@@ -155,10 +167,21 @@
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/biaya3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    android:text="Registrasi Awal Semester \n\n
+Kelas Reguler\n
+Rekayasa Perangkat
+Lunak Aplikasi - D3 -> SPA->13JT\n
+Kelas Karyawan\n
+Khusus untuk kelas karyawan, biaya registrasi awal adalah dengan membayar SPP selama 3 bulan sekaligus untuk bulan Agustus, September dan Oktober yaitu total Rp 3.600.000. Kemudian untuk bulan November dan seterusnya dapat membayarkan SPP bulanan sebesar Rp 1.200.000\n
+
+Program Pasca Sarjana\n
+Untuk program magister, pembiayaan dibayarkan dengan ketentuan membayarkan SPP 3 bulan pertama sekaligus.
+Catatan:
+Untuk mahasiswa alih jalur dan pindahan, pembayaran biaya registrasi awal belum termasuk aanvullen yang besarannya sesuai SKS yang diakui dan biaya kemahasiswaan sebesar Rp 500.000."
                     android:textAlignment="center"
                     android:textColor="@color/colorText" />
             </LinearLayout>
@@ -184,10 +207,13 @@
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/biaya4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    android:text="Potongan Biaya Pendidikan (SPA)\n
+Potongan biaya pendidikan diberikan sebagai bentuk apresiasi institusi kepada calon mahasiswa yang memiliki prestasi akademik atau non akademik atau bagi calon yang telah memiliki jalur kemitraan dengan UTDI. Potongan diberikan terhadap SPA dengan ketentuan sebagai berikut.\n
+25% dari SPA -> Jalur Raport, Undangan"
                     android:textAlignment="center"
                     android:textColor="@color/colorText" />
             </LinearLayout>
@@ -213,97 +239,13 @@
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/biaya5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text=""
-                    android:textAlignment="center"
-                    android:textColor="@color/colorText" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_card_kenali"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="24dp">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_number_6"
-                    android:gravity="center"
-                    android:text="6"
-                    android:textColor="#CF9259"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text=""
-                    android:textAlignment="center"
-                    android:textColor="@color/colorText" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_card_kenali"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="24dp">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_number_7"
-                    android:gravity="center"
-                    android:text="7"
-                    android:textColor="#FC6B6B"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text=""
-                    android:textAlignment="center"
-                    android:textColor="@color/colorText" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_card_kenali"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                android:paddingHorizontal="20dp"
-                android:paddingVertical="24dp">
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/bg_number_8"
-                    android:gravity="center"
-                    android:text="8"
-                    android:textColor="#E2B02F"
-                    android:textStyle="bold" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text=""
+                    android:text="Skema Pembayaran SPA dan SPP Tahun Pertama\n
+Skema pembayaran di bawah ini dapat berubah sewaktu-waktu sesuai kalender akademik.\n
+Semester 1 -> UKT + 10% SPA -> Saat Pendaftaran Ulang"
                     android:textAlignment="center"
                     android:textColor="@color/colorText" />
             </LinearLayout>

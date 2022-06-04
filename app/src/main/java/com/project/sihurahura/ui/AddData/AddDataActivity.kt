@@ -1,5 +1,6 @@
 package com.project.sihurahura.ui.AddData
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
@@ -135,6 +136,7 @@ class AddDataActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("ResourceAsColor")
     private fun setObservableAddData() {
         viewModel.addDataUser.observe(this) {
             when (it) {
@@ -157,6 +159,8 @@ class AddDataActivity : AppCompatActivity() {
 
                 is VmData.Failure -> {
                     toast("${it.message}")
+                    binding.submitButton.isEnabled = true
+                    binding.submitButton.setBackgroundColor(R.color.blue)
                 }
             }
         }

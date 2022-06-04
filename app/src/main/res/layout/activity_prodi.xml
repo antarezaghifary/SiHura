@@ -42,7 +42,7 @@
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Lorem ipsum dolor"
+                    android:text="Program Studi"
                     android:textColor="@color/colorText"
                     android:textSize="32sp"
                     android:textStyle="bold" />
@@ -51,7 +51,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:text="Lorem ipsum dolor"
                     android:textColor="@color/colorAccent"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -90,16 +89,16 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="150dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_kenali" />
+                    android:src="@drawable/prodi" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="6dp"
                     android:layout_marginTop="8dp"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet"
+                    android:text="S2 - Teknologi Informasi"
                     android:textColor="@color/colorText"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -110,7 +109,8 @@
                     android:layout_marginHorizontal="6dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet"
+                    android:text="Konsentrasi di bidang teknologi perangkat lunak dan data.
+Informasi lebih detail tentang Program studi ini dapat dilihat di https://pascasarjana.utdi.ac.id/"
                     android:textColor="@color/colorText" />
             </LinearLayout>
 
@@ -126,16 +126,16 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="150dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_kenali" />
+                    android:src="@drawable/prodi" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="6dp"
                     android:layout_marginTop="8dp"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet"
+                    android:text="S1 - Informatika"
                     android:textColor="@color/colorText"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -146,13 +146,85 @@
                     android:layout_marginHorizontal="6dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet"
+                    android:text="Konsentrasi di Computer Support Specialist, Software Development Application, Web Developer, Computer Systems Analysis, Software Developer (Systems Software), Computer and Information Research Scientist dan Digitalpreneur."
                     android:textColor="@color/colorText" />
             </LinearLayout>
 
 
             <LinearLayout
+                android:id="@+id/Tk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_card_informasi"
+                android:orientation="vertical"
+                android:paddingHorizontal="8dp"
+                android:paddingTop="8dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prodi" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_marginTop="8dp"
+                    android:text="S1 - Sistem Informasi"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Konsentrasi di Data Engineering, Business Analyst, Information System Auditor, Consultant, Database Administrator, Application Development, User Interface (UI/UX) Designer."
+                    android:textColor="@color/colorText" />
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/btnPengobatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_card_informasi"
+                android:orientation="vertical"
+                android:paddingHorizontal="8dp"
+                android:paddingTop="8dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/prodi" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_marginTop="8dp"
+                    android:text="S1 - Teknik Komputer"
+                    android:textColor="@color/colorText"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="6dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="Konsentrasi di System Engineer, Perekayasa Keamanan Jaringan, Perekayasa Infrastruktur Big Data  IoT, Perekayasa Sistem IoT, Konsultan IT, Pengajar serta Technopreneur."
+                    android:textColor="@color/colorText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Bd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18dp"
@@ -164,16 +236,16 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="150dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_kenali" />
+                    android:src="@drawable/prodi" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="6dp"
                     android:layout_marginTop="8dp"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet"
+                    android:text="S1 - Bisnis Digital"
                     android:textColor="@color/colorText"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -184,9 +256,10 @@
                     android:layout_marginHorizontal="6dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="16dp"
-                    android:text="@string/lorem_ipsum_dolor_sit_amet"
+                    android:text="Konsentrasi di e-Business Analyst, Social Media Marketing, Startup Business Digital, Ahli teknologi Keuangan Digital, Profesional Bisnis Digital, Researcher e-Business, Digipreneur."
                     android:textColor="@color/colorText" />
             </LinearLayout>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
